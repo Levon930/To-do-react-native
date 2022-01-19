@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 
-import ToDoList from "./src/components/toDoList";
+import ToDoList from "./src/components/ToDoList";
 import { useAddToDo } from "./src/hooks/useAddToDo";
 
 export default function App() {

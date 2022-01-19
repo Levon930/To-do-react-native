@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import { useGetToDos } from "../hooks/useGetToDos";
 import { useUpdateToDo } from "../hooks/useUpdateToDo";
-import AddToDoForm from "./addToDoForm";
+import AddToDoForm from "./AddToDoForm";
 
 const ToDoList = ({ changeList, handleClick }) => {
   const [{ todoData, isLoading }, refetch] = useGetToDos("");
@@ -57,7 +57,6 @@ const ToDoList = ({ changeList, handleClick }) => {
   };
 
   if (isLoading) return <ActivityIndicator />;
-  if (todoData?.tasks?.length === 0) return null;
 
   return (
     <KeyboardAwareFlatList
